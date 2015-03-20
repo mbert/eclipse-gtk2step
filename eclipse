@@ -1,0 +1,9 @@
+#!/bin/sh
+cd /opt/eclipse
+GTK2_RC_FILES=/home/md/.gtkrc-2.0:/home/md/.eclipse/gtkrc
+#GTK2_RC_FILES=/usr/share/themes/GTK2-Step/gtk-2.0/gtkrc:/home/md/.gtkrc-eclipse
+#GTK2_RC_FILES=/usr/share/themes/Clearlooks/gtk-2.0/gtkrc:/home/md/.gtkrc-eclipse
+export GTK2_RC_FILES
+SWT_GTK3=0
+export SWT_GTK3
+exec ./eclipse "$@"
